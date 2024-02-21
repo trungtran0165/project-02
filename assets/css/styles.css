@@ -3,7 +3,7 @@
 }
 
 :root {
-    --primary-color: #FFB900;
+    --primary-color: #ffb900;
     --font-heading: Sen, sans-serif;
 }
 
@@ -13,7 +13,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Common */
@@ -29,16 +29,32 @@ a {
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
-    color: #FFF;
-    border-radius: 999px;
+    color: #ffffff;
     background: #171100;
+    border-radius: 999px;
 }
 
 .btn:hover {
     opacity: 0.9;
 }
 
-/* Content */
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -47,9 +63,8 @@ a {
 }
 
 /* Header */
-
 .header {
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .header.fixed {
@@ -76,13 +91,11 @@ a {
     position: relative;
     padding: 8px 21px;
     font-size: 1.6rem;
-    color: #5F5B53;
-} 
+    color: #5f5b53;
+}
 
 .nav a:hover,
-
 .nav li.active a {
-    /* font-weight: 600; */
     text-shadow: 1px 0 0 currentColor;
     color: #171100;
 }
@@ -95,8 +108,8 @@ a {
     display: block;
     width: 12px;
     height: 2px;
-    border-radius: 1px;
     background: #171100;
+    border-radius: 1px;
 }
 
 .header .sign-up-btn {
@@ -110,7 +123,7 @@ a {
 /* Hero */
 .hero {
     padding: 56px 0 65px;
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .hero .body {
@@ -124,11 +137,11 @@ a {
 }
 
 .hero .media-block .img {
+    display: block;
     width: 470px;
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
-    display: block;
 }
 
 .hero-summary {
@@ -137,9 +150,9 @@ a {
     bottom: 48px;
     width: 270px;
     padding: 24px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    background: #FFF;
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
 .hero-summary .item {
@@ -158,53 +171,45 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFF9E8;
+    background: #fff9e8;
 }
 
 .hero-summary .item:nth-of-type(2) .icon {
-    background: #FCEFFF;
+    background: #fcefff;
 }
 
 .hero-summary .item:nth-of-type(3) .icon {
-    background: #EBEAFF;
+    background: #ebeaff;
 }
 
 .hero-summary .info {
     margin-left: 16px;
 }
 
-.hero-summary .lable {
+.hero-summary .label {
     font-size: 1.4rem;
-    line-height: 1.875;
-    color: #5F5B53;
+    line-height: 1.86;
+    color: #5f5b53;
 }
 
 .hero-summary .title {
-    font-size: 1.8rem;
     font-weight: 600;
-    line-height: 1,67;
+    font-size: 1.8rem;
+    line-height: 1.67;
     color: #171100;
 }
+
 /* Hero right */
 .hero .content-block {
     width: 52%;
     padding: 64px 0 0 130px;
 }
 
-.hero .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17; /* 117.241% */
-    letter-spacing: -0.02em;
-    color: #171100;
-}
-
 .hero .desc {
     margin-top: 22px;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5F5B53
+    color: #5f5b53;
 }
 
 .hero .cta-group {
@@ -235,15 +240,16 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
-    background: #FFFFFF;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
 }
 
 .hero .watch-video span {
     margin-left: 14px;
-    color: #171100;
-    font-size: 1.8rem;
     font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
 }
 
 .hero .stats {
@@ -257,4 +263,47 @@ a {
     font-size: 4.4rem;
     line-height: 1.23;
     color: #171100;
+}
+
+/* Popular */
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+}
+
+.popular-top .control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
 }
