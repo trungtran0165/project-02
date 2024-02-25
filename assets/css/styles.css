@@ -325,8 +325,8 @@ a {
 .popular .course-item {
     flex: 1;
     border-radius: 12px;
-    border: 1px solid #E2DFDA;
-    background: #FFF;
+    border: 1px solid #e2dfda;
+    background: #fff;
 }
 
 .popular .course-item:hover {
@@ -342,7 +342,7 @@ a {
     border-radius: 12px 12px 0px 0px;
 }
 
-.popular .course-item .info    {
+.popular .course-item .info {
     padding: 16px 22px 22px;
 }
 
@@ -357,13 +357,13 @@ a {
 .popular .course-item .title a {
     font-weight: 600;
     font-size: 1.8rem;
-    line-height: 1.67; 
+    line-height: 1.67;
     color: #171100;
 }
 
 .popular .rating .value {
     margin-left: 6px;
-    color: #FEA31B;
+    color: #fea31b;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -373,7 +373,7 @@ a {
     margin-top: 6px;
     font-size: 14px;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .popular .course-item .foot {
@@ -395,5 +395,77 @@ a {
 .popular .course-item .book-btn:hover {
     color: fff;
     background: var(--primary-color);
-    
+}
+
+/* Feedback */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    margin-top: 18px;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+    color: #f7f7f7;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
 }
